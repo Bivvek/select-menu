@@ -1,0 +1,66 @@
+html {
+  background: #dfe9f3;
+  min-height: 100vh;
+}
+
+#container {
+  margin: 70px auto 0;
+  width: 270px;
+}
+
+#teams-dropdown-menu {
+  border-radius: 5px;
+  padding: 10px 15px;
+  position: relative;
+  width: 100%;
+}
+
+#teams-dropdown-menu ul {
+  background: rgb(27, 1, 51);
+  border-radius: 5px;
+  border-style:groove;
+  border-color: purple;
+  box-shadow: 0 2px 5px rgba(10, 10, 10, 0.05), 0 0 10px 0 rgba(10, 10, 10, 0.08);
+  display: none;
+  left: 0;
+  overflow: hidden;
+  padding: 60px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#teams-dropdown-menu ul.active {
+  display: block;
+  animation: slidedown 0.6s;
+}
+
+@keyframes slidedown {
+  from {
+    margin-top: -25px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+#teams-dropdown-menu ul li {
+  padding: 10px 15px;
+}
+
+#teams-dropdown-menu ul li:hover {
+  border-left: 5px solid #00d6fc;
+  color: #00d6fc !important;
+  padding-left: 10px;
+}
+
+.custom-footer {
+  font-size: 0.75rem;
+}
+
+i {
+  width: 24px;
+  text-align: center;
+  margin-right: 10px;
+}
